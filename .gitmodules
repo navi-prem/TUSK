@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:navi-prem/genspark-ocr.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:navi-prem/genspark-frontend.git
