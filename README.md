@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e1dc66bd-9a07-452f-8768-bc7e34e83bde)<div align=center>
+<div align=center>
        <img src="https://github.com/bitspaceorg/.github/assets/119417646/577c8581-499e-4cbb-a2f8-e78c643204bc" width="150" alt="Logo"/>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
        <img src="https://github.com/user-attachments/assets/359035d0-6a5b-403a-ac6a-35c82db8c5b1" width="120" alt="Logo" />
