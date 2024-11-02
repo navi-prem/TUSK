@@ -71,15 +71,18 @@ To validate external documents against the Knowledge Base, we employ a **Retriev
 2. **Document Segmentation**: The extracted content is divided into manageable sections, enhancing analysis granularity.
 
 3. **RAG Chain Execution**:
+
+   <img src="https://github.com/user-attachments/assets/b7defb3b-1d1c-4009-a8af-016bb6d44af1" width="300" />
+
    - **Prompt Construction**: Using LangChain, we create a custom prompt template tailored for each section. The prompt contains:
       - **The document segment to be evaluated**.
       - **Contextual information** retrieved from the Knowledge Base by performing a vector search using **Azure Cognitive Search**.
       - **Previously validated content and its results**, if applicable, to strengthen the model’s decision-making.
    - **LLM Processing**: Each prompt is sent to the **Mistral 3B** language model, which evaluates the content for compliance based on the context provided. This method is called **Query Decomposition**, where each part of the document is processed separately and sequentially to ensure a thorough review.
 
-4. **Result Aggregation and Storage**: The model’s responses for each segment are stored as individual records, capturing both the compliance outcome (legal or not) and the reasoning.
+5. **Result Aggregation and Storage**: The model’s responses for each segment are stored as individual records, capturing both the compliance outcome (legal or not) and the reasoning.
 
-5. **Frontend Display**: The final results are presented to the user in the frontend, showing the compliance status of each document section, along with the reasons for the determination.
+6. **Frontend Display**: The final results are presented to the user in the frontend, showing the compliance status of each document section, along with the reasons for the determination.
 
 # Use Case
 
